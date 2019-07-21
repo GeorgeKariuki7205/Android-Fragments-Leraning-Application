@@ -14,14 +14,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //The method that is used to launch the new activity.
+    int number = 1;
 
     public  void launchDetails(View view){
 
-        CharSequence text = "The launch button is clicked";
+        CharSequence text = "The button is clicked "+number+" times";
         int duration = Toast.LENGTH_SHORT;
 
         Toast toast =  Toast.makeText(this,text,duration);
         toast.show();
+        number++;
 
     }
 }
